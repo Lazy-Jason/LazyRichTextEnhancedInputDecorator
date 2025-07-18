@@ -102,34 +102,6 @@ Key: Gamepad Face Button Bottom
 Image: [Your A/X button icon texture]
 ```
 
-## Advanced Usage
-
-### Custom Device Detection
-The plugin automatically detects the most recently used input device. For Steam Deck and similar devices, it intelligently defaults to gamepad icons when keyboard/mouse isn't explicitly detected.
-
-### Editor Preview
-Set up the **Editor Brush** property to show a preview icon in the editor when designing your UI.
-
-### Multiple Input Contexts
-The plugin works with multiple Input Mapping Contexts and will find the appropriate key binding for each action.
-
-## Troubleshooting
-
-### Icons Not Showing
-- Verify your data tables are properly configured with the correct key names
-- Check that your Input Actions are correctly mapped in the ActionMap
-- Ensure your Rich Text Block has the decorator added to its Decorator Classes
-
-### Wrong Icons Displaying
-- Check your gamepad data table mappings
-- Verify the hardware device identifiers in your GamepadImages map
-- Test with different input devices to confirm detection
-
-### Performance Issues
-- Consider using smaller icon textures
-- Limit the number of input tags in a single Rich Text Block
-- Cache frequently used icons in your data tables
-
 ## API Reference
 
 ### ULazyRichTextEnhancedInputDecorator
